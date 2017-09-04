@@ -15,12 +15,12 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:onClick="setJiasu"
+        android:onClick="setSpeedUp"
         android:text="加速" />
     <Button
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:onClick="setJiansu"
+        android:onClick="setSlowDown"
         android:text="减速" />
 
     <RelativeLayout

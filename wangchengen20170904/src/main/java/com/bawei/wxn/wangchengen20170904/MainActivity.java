@@ -26,14 +26,16 @@ public class MainActivity extends AppCompatActivity {
         customProgress.setCustomColor();
 
     }
-    public void setJiasu(View view){
+    public void setSpeedUp(View view){
 
-        ball.setInterpolator(new AccelerateDecelerateInterpolator());
+//        加速 把时间缩短
+        ball.setTime(2000);
 
     }
-    public void setJiansu(View view){
+    public void setSlowDown(View view){
 
-        ball.setInterpolator(new DecelerateInterpolator());
+//        减速 把时间加长
+        ball.setTime(8000);
 
     }
 

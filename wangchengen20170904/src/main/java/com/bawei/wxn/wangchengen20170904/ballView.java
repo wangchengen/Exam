@@ -58,14 +58,24 @@ public class ballView extends View {
         objectAnimator.setDuration(5000);
         objectAnimator.setInterpolator(new LinearInterpolator());
         objectAnimator.setRepeatCount(-1);
-        objectAnimator.setStartDelay(500);
+//        objectAnimator.setStartDelay(500);
 
         objectAnimator.start();
     }
 
-    public void setInterpolator(TimeInterpolator interpolator){
+    public void setTime(int time){
 
-        objectAnimator.setInterpolator(interpolator);
+//        objectAnimator.pause();
+//        objectAnimator.setInterpolator(interpolator);
+//
+        objectAnimator.setDuration(time);
+//        objectAnimator.start();
+
+
+
+    }
+
+    private void startAnim(){
 
     }
 //
