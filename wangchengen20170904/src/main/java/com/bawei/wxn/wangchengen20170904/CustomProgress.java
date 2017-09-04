@@ -1,5 +1,6 @@
 package com.bawei.wxn.wangchengen20170904;
 
+import android.animation.ObjectAnimator;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
@@ -9,6 +10,7 @@ import android.graphics.RectF;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.view.View;
+import android.view.ViewGroup;
 
 /**
  * Created by wxn on 2017/9/4.
@@ -22,6 +24,8 @@ public class CustomProgress extends View {
     private float customWidth;
 
 
+    private ballView ball;
+
 
     public CustomProgress(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
@@ -31,6 +35,8 @@ public class CustomProgress extends View {
     public CustomProgress(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init(attrs);
+
+
     }
 
 
@@ -51,7 +57,11 @@ public class CustomProgress extends View {
         mPaint.setStrokeWidth(customWidth);
 
         mPaint.setColor(customColor);
+
+
+
     }
+
 
     @Override
     protected void onDraw(Canvas canvas) {
@@ -63,6 +73,15 @@ public class CustomProgress extends View {
         RectF oval = new RectF(x, y, getWidth() - x, getHeight() - y);
 
         canvas.drawArc(oval,0,360,false,mPaint);
+
+
+
+
+
+
+
+
+
     }
 
 
