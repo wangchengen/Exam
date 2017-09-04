@@ -75,9 +75,7 @@ public class ballView extends View {
 
     }
 
-    private void startAnim(){
 
-    }
 //
 
     public float getRadius() {

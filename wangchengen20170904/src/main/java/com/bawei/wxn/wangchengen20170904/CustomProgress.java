@@ -24,7 +24,7 @@ public class CustomProgress extends View {
     private float customWidth;
 
 
-    private ballView ball;
+
 
 
     public CustomProgress(Context context, @Nullable AttributeSet attrs) {
@@ -35,7 +35,6 @@ public class CustomProgress extends View {
     public CustomProgress(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         init(attrs);
-
 
     }
 
@@ -73,12 +72,6 @@ public class CustomProgress extends View {
         RectF oval = new RectF(x, y, getWidth() - x, getHeight() - y);
 
         canvas.drawArc(oval,0,360,false,mPaint);
-
-
-
-
-
-
 
 
 
